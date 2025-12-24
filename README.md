@@ -1,4 +1,3 @@
-```markdown
 # ☁️ SAP Cloud Platform Keep-Alive & Monitor
 
 一个运行在 **Cloudflare Workers** 上的自动化工具，专为 SAP Cloud Platform (Cloud Foundry) 环境设计。它可以实时监控您的应用状态，并在应用离线（休眠）时自动调用 SAP API 进行重启，同时通过 Telegram 发送通知。
@@ -76,6 +75,8 @@
 
 ### 查看状态面板
 部署完成后，直接访问 Worker 的 URL (例如 `https://sap-monitor.your-name.workers.dev`)，即可看到状态仪表盘：
+<img width="1209" height="938" alt="f04f3481-ddf4-4e9e-8d0e-ff08d14a0039" src="https://github.com/user-attachments/assets/e43ae9ed-a643-4fb5-ba76-ae7db1ac3418" />
+
 *   **绿色卡片**: 应用运行正常 (HTTP 200)。
 *   **红色卡片**: 应用异常，脚本会在下一次 Cron 周期尝试重启。
 *   点击页面上的 **"刷新状态"** 按钮可重新加载数据。
@@ -98,4 +99,3 @@
 
 ---
 **License**: MIT
-```
